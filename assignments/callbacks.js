@@ -79,7 +79,7 @@ function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
   return cb(x,y)
 }
-const call3 = (x,y)=> x*y;
+const call3 = (x,y) => x*y;
 console.log(call3(3,3))
 
 
@@ -88,13 +88,14 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
   return cb (item,list)
 }
-const call4 =function(items,list) {
-  if(items===list){
+const call4 =function(item,list) {
+  if(list===item){
     return true;
   }else {
     return false;
   }
 }
+console.log(call4("gum","gums"))
 
 /* STRETCH PROBLEM */
 

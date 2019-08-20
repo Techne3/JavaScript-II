@@ -4,6 +4,40 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function recipes(recipeBox){
+  const ingrediant1 = 'garlic';
+  const ingrediant2 = 'peppers';
+  const ingrediant3 ='salt';
+  const ingrediant4 ='chicken'
+  const ingrediant5 ='chilies'
+  const ingrediant6 ='tortillas'
+  const ingrediant7 ='egg-noodles'
+  console.log(recipeBox)
+
+
+  function mexFood(mexican){
+    console.log(mexican)
+    console.log(`Some ingredients found in Chilli-rellenos is ${ingrediant2} and ${ingrediant5} `)
+
+
+    function chFood(chinese){
+      console.log(chinese)
+      console.log(`Some ingredients found in lo-mein are ${ingrediant1} and ${ingrediant7}`)
+
+
+    }//ch
+    chFood('lo-mein')
+  }//mex
+  mexFood('chilli-relleno')
+}// recipes 
+recipes('ingredients')
+
+
+
+
+
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
