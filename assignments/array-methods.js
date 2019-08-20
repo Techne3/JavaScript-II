@@ -95,6 +95,28 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
+//reverse the fist name of all runners
+
+let fistNameReverse = [];
+ runners.map(function(items){
+   return fistNameReverse.push(items.first_name.split('').reverse().join(''));
+ })
+console.log(fistNameReverse);
+
+
 // Problem 2
+// display the company name and the amount they donated
+let companyDonation =[];
+runners.forEach(items => companyDonation.push(`${items.company_name} donated this much ${items.donation}` ))
+console.log(companyDonation)
 
 // Problem 3
+// for all ids over 25 print first name last name and email
+let ids= [];
+runners.filter(items =>{
+ if (items.id >= 25 ){
+   return ids.push(`${items.first_name} ${items.last_name} ${items.email}`)
+  }
+})
+console.log(ids);
+
